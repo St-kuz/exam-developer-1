@@ -19,8 +19,7 @@ string D = Convert.ToString(Console.ReadLine());
 
 string[] longMassive = {A, B, C, D};
 
-
-if (longMassive[0].Length < 4) Console.Write($"{longMassive[0]} ");
-if (longMassive[1].Length < 4) Console.Write($"{longMassive[1]} ");
-if (longMassive[2].Length < 4) Console.Write($"{longMassive[2]} ");
-if (longMassive[3].Length < 4) Console.Write($"{longMassive[3]} ");
+for (int i = 0; i < longMassive.Length; i++)
+{
+    if (longMassive[i].Length < 4) Console.Write($"{longMassive[i]} ");
+}
